@@ -1,3 +1,4 @@
+#coding: utf-8
 integ = int(input())
 flot = float(input())
 intg_pos = int(input())
