@@ -1,3 +1,4 @@
+#coding: utf-8
 a = input().lower()
 if 'i'in a or 'e' in a:
     print(False)
