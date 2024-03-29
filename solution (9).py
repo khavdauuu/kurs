@@ -1,3 +1,4 @@
+#coding: utf-8
 s = input()
 c1 = len(s)
 s = s.replace('!', '')
