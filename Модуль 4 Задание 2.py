@@ -1,15 +1,10 @@
-from collections import deque
-from typing import List
+numerator, denominator = int(input()), int(input())
 
-def rotate_list(nums: List[int], n: int):
-    # YOUR CODE HERE
-    nums_deque = deque(nums)
-    nums_deque.rotate(-n)
-    result = list(nums_deque)
-    return result
+def changed_div(numerator, denominator):
+    try:
+        quotient = numerator / denominator
+        return denominator / quotient
+    except ZeroDivisionError:
+        return denominator
 
-code = []
-while data := input():
-    code.append(data)
-code = "\n".join(code)
-exec(code)
+print(changed_div(numerator, denominator))
